@@ -1,0 +1,40 @@
+.container-fluid {
+  padding: 0;
+  background-color: #0D0D0D;
+  margin-right: 0;
+}
+
+.container {
+  margin-bottom: 5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+nav {
+  margin-bottom: 5em;
+}
+
+.hero {
+  margin-bottom: 5em;
+}
+
+.row {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col-md-1 {
+  margin-left: 15em;
+  background-color: #F2F2F2;
+}
+
+.col-md-2 {
+  padding-top: 0;
+  background-color: #F2F2F2;
+}
+
+.col-md-10 {
+  padding-left: 0;
+  padding-right: 0;
+}

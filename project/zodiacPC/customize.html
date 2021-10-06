@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zodiac PC </title>
+    <!--
+        Auother: Jeremiah Kriegel
+        Date: April 5, 2021
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/structure.css">
+    <link rel="stylesheet" href="Sass/structure.scss">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="SASS/style.scss">
+
+    <link rel="stylesheet" href="css/customize.css">
+    <link rel="stylesheet" href="SASS/customize.scss">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/testing.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-sm white navbarlight justify-content-center ">
+
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="index.html"> <img src="images/home/Zodiac PC.png" width="30%" height="auto" alt="Zodiac Logo"></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="fa fa-bars" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="desktop.html">Desktop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="laptop.html">Laptop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="customize.html">Customize</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                          Company
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="about.html">About</a>
+                            <a class="dropdown-item" href="zodiacContact.php">Contact</a>
+                            <a class="dropdown-item" href="#">Q&A</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <header>
+            <div class="row">
+                <div class="col-md-12 jumbotron jumbotron-fluid">
+                    <div class="hero-image">
+                        <div class="hero-text">
+                            <h1>Customize</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="case">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>CASE</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="caseImage">
+                        <img src="images/customize/case1.png" id="caseImage" alt="Computer Case">
+                    </div>
+                </div>
+                <div class="col-md-7">
+
+                    <div class="caseForm">
+                        <form action="#" method="POST" class="needs-validation">
+                            <div class="form-group">
+                                <label for="Size">Case Size:</label>
+                                <select class="form-control" name="caseSize" id="caseSize" value="" required>
+                                    <option>Please Choose a Size</option>
+                                    <option>Ultra Tower</option>
+                                    <option>Full Tower</option>
+                                    <option>Mid Tower</option>
+                                    <option>Mini Tower</option>
+                                   
+                                </select>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="case">Case Type:</label>
+                                <select class="form-control" name="caseType" id="caseType" value="" required>
+                                    <option>Please Choose a Case</option>
+                                    <option>NZXT H510 White</option>
+                                    <option>Zalman S4 Black/Grey</option>
+                                    <option>Panteck White</option>
+                                    <option>Phantek Eclipse</option>
+                                </select>
+
+                            </div>
+
+                            <button type="button" class="button" onclick="runCase()">Enter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row order2">
+
+            <div class="col-md-5">
+                <h2>Updated Information</h2>
+                <ul>
+                    <li>CPU: <span id="cpuList"></span></li>
+                    <li>GPU: <span id="gpuList"></span></li>
+                    <li>PSU: <span id="psuList"></span></li>
+                    <li>MotherBoard: <span id="motherBoardList"></span></li>
+                    <li>Storage: <span id="storageList"></span></li>
+                    <li>Cooling: <span id="coolingList"></span></li>
+                    <li>Water Cooling: <span id="waterCoolingList"></span></li>
+                    <li>Fan: <span id="fanList"></span></li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <h2>PC Parts</h2>
+                <div class="pcOptions">
+                    <form action="#" method="POST" class="needs-validation">
+                        <div class="form-group">
+                            <label for="CPU">CPU:</label>
+                            <select class="form-control" name="CPU" id="CPU" value="" onchange="getCpu()" required>
+                                <option>Please Choose A CPU</option>
+                                <option>AMD Ryzen 9 5950X</option>
+                                <option>Intel Core i9-10900K Processor</option>
+                                <option>Intel Core i9-10900KF Processor</option>
+                                <option>AMD Ryzen 9 5900X</option>
+                               
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="GPU">GPU:</label>
+                            <select class="form-control" name="GPU" id="GPU" value="" onchange="getGpu()" required>
+                                <option>Please Choose A GPU</option>
+                                <option>NVIDIA GeForce RTX 3090</option>
+                                <option>NVIDIA GeForce RTX 2080 Ti</option>
+                                <option>AMD Radeon RX 6800e</option>
+                                <option>NVIDIA GeForce GTX 1080 Ti</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="PSU">Power Supply:</label>
+                            <select class="form-control" name="PSU" id="PSU" value="" onchange="getPsu()" required>
+                                <option>Please Choose A Power Supply</option>
+                                <option>Seasonic PRIME Series</option>
+                                <option>Antec HCP Platinumy</option>
+                                <option>Corsair AXi Series</option>
+                                <option>Bitfenix Whisper</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motherBoard">MotherBoard:</label>
+                            <select class="form-control" name="motherBoard" id="motherBoard" value="" onchange="getMotherBoard()" required>
+                                <option>Please Choose A MotherBoard</option>
+                                <option>Asus ROG Maximus XIII Hero</option>
+                                <option>MSI MEG Z490 Godlike</option>
+                                <option>GIGABYTE Z490 Gaming X</option>
+                                <option>MSI MPG Z390M Gaming Edge AC</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Storage">Storage</label>
+                            <select class="form-control" name="storage" id="storage" value="" onchange="getStorage()" required>
+                                <option>Please Choose A Storage</option>
+                                <option>Samsung 970 Evo Plus</option>
+                                <option>Corsair MP400</option>
+                                <option>Intel Optane 905P</option>
+                                <option>SK Hynix Gold P31</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Cooling">Cooling:</label>
+                            <select class="form-control" name="cooling" id="cooling" value="" onchange="getCooling()" required>
+                                <option>Cooling?</option>
+                                <option>Water</option>
+                                <option>Fan</option>
+                                <option>Fan & Water</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="watercooling">
+                            <label for="Water">Water Cooling:</label>
+                            <select class="form-control" name="water" id="water" value="" onchange="getWaterCooling()" required>
+                                <option>Please Choose A Water Cooling</option>
+                                <option> CoolerMaster MasterLiquid ML360R RGB</option>
+                                <option>Corsair H150i Elite Capellix</option>
+                                <option> Arctic Liquid Freezer II 280</option>
+                                <option> Corsair H100i RGB PRO XT</option>
+                                <option>NZXT Kraken M22</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group" id="displayFan">
+                            <label for="Fan">Fan:</label>
+                            <select class="form-control" name="Fan" id="Fan" value="" onchange="getFan()" required>
+                                <option>Please Choose Fans</option>
+                                <option>Noctua NF-S12B redux-1200</option>
+                                <option>Corsair LL120 RGB</option>
+                                <option>Cooler Master MF120R A-RGB</option>
+                                <option>Noctua NF-A12x25 PWM</option>
+                            </select>
+                        </div>
+                        <button type="reset" class="button">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="row">
+                <div class="col-md-12">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>THIS WEBSITE IS FOR SCHOOL PURPOSES ONLY</h4>
+                    <p>THank you for spending your time look over this webiste</p>
+
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="desktop.html">Desktop</a>
+                        </li>
+                        <li>
+                            <a href="laptop.html">Laptop</a>
+                        </li>
+                        <li>
+                            <a href="customize.html">Customize</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="zodiacContact.php">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Community</a>
+                        </li>
+                        <li>
+                            <a href="#">Q&A</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <!-- Add font awesome icons -->
+                    <a href="https://www.facebook.com/originpc/" target="blank" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/ORIGINPC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/user/ORIGINPC" target="blank" class="fa fa-youtube"></a>
+                    <a href="https://www.instagram.com/originpc/?hl=en" target="blank" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

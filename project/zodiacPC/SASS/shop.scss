@@ -1,0 +1,77 @@
+@import "colors";
+@import "style";
+header {
+    .col-md-12 {
+        margin-bottom: 5em;
+        color: $logo;
+        h1 {
+            @include heading1Logo
+        }
+    }
+}
+
+.category {
+    width: 100%;
+    .col-md-12 {
+        margin-bottom: 5em;
+        margin-top: 5em;
+        color: $logo;
+        h2 {
+            @include heading2Logo;
+        }
+    }
+    .col-md-4 {
+        color: $text;
+        margin-bottom: 5em;
+    }
+    .card {
+        background-color: $text;
+        border: none;
+        width: 65%;
+        margin: auto;
+        max-height: 50em;
+        .card-title {
+            color: $background;
+        }
+        .card-text {
+            color: $background;
+            padding-left: 1.5em;
+            margin-bottom: 2em;
+            line-height: 1.8;
+        }
+    }
+    .button {
+        border-radius: 20px;
+        margin-left: 40%;
+        color: $background;
+        padding: 10px 25px;
+        outline: none;
+        font-size: 16px;
+        border: none;
+        box-shadow: 0 4px $background;
+        font-family: 'Roboto', sans-serif;
+    }
+    @media screen and (max-width:400px) {
+        .button {
+            margin-left: 30%;
+        }
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    .button:hover {
+        background-color: $lightBlue;
+        color: $text;
+    }
+    .button:active {
+        outline: none;
+        background-color: $logo;
+        box-shadow: 0 3px $middleBlue;
+        transform: translateY(4px);
+    }
+}
+
+.col-md-12 {
+    margin-bottom: 5em;
+    color: $logo;
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zodiac PC </title>
+    <!--
+        Auother: Jeremiah Kriegel
+        Date: April 5, 2021
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/structure.css">
+    <link rel="stylesheet" href="Sass/structure.scss">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="SASS/style.scss">
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="Sass/home.scss">
+
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="Sass/modal.scss">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/testing.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body onload="displayModal()">
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-sm white navbarlight justify-content-center ">
+
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="index.html"> <img src="images/home/Zodiac PC.png" width="30%" height="auto" alt="Zodiac Logo"></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="fa fa-bars" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="desktop.html">Desktop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="laptop.html">Laptop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="customize.html">Customize</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                          Company
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="about.html">About</a>
+                            <a class="dropdown-item" href="zodiacContact.php">Contact</a>
+                            <a class="dropdown-item" href="#">Q&A</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </nav>
+
+        <!--The modal-->
+        <div id="noticeModal" class="modal">
+            <!--Content-->
+            <div class="modalContent">
+
+                <div class="modalHeader">
+                    <button onclick="closeModal()" class="close">Close</button>
+                    <h1>This website is still under <span>Construction</span></h1>
+                </div>
+
+                <div class="modalBody">
+                    <h2>It will be updated and improve on.</h2>
+                    <img src="images/constrution.jpg" alt="construction">
+                    <h3>Just a reminder: This project is for school purposes only and is not involved in any commerce. </h3>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="left">
+                        <button type="button" class="  CarbouselButton button1 item1"></button>
+                        <button type="button" class=" CarbouselButton  button2 item2"></button>
+                        <button type="button" class="  CarbouselButton button3 item3"> </button>
+                        <button type="button" class="  CarbouselButton button4 item4"></button>
+                        <button type="button" class=" CarbouselButton button5 item5"> </button>
+
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img src="images/home/banner/banner4.jpg" alt="RTX Banner" width="100%" height="auto">
+                                </div>
+
+                                <div class=" carousel-item ">
+
+                                    <img src="images/home/banner/banner.jpg" alt="Gaming PC Banner " width="100%" height="auto">
+                                </div>
+
+                                <div class="carousel-item active ">
+                                    <a href="#"><img src="images/home/banner/banner2.jpg" alt="sale banner " width="100% " height="auto "></a>
+                                </div>
+
+                                <div class="carousel-item ">
+                                    <img src="images/home/banner/banner3.jpg " alt="UpGrade Banner " width="100%" height="auto ">
+                                </div>
+
+                                <div class="carousel-item ">
+                                    <img src="images/home/banner/banner5.jpg" alt="Free Shipping Banner " width="100%" height="auto ">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container ">
+            <div class="row ">
+                <div class="aroundImg d-flex ">
+                    <div class="col-md-3">
+                        <img src="images/home/button/desktop2.png" class="image">
+                        <div class="middle">
+                            <div class="text">
+                                <a href="desktop.html">
+                                    <H1>DESKTOP</H1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <img src="images/home/button/laptop2.png" class="image">
+                        <div class="middle">
+                            <div class="text">
+                                <a href="laptop.html">
+                                    <H1>LAPTOP</H1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <img src="images/home/button/custome2.png" class="image">
+                        <div class="middle">
+                            <div class="text">
+                                <a href="laptop.html">
+                                    <h1>CUSTOM</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <img src="images/home/button/ass2.png" class="image">
+                        <div class="middle">
+                            <div class="text shop">
+                                <a href="shop.html">
+                                    <h1>Shop</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-6 ">
+                <iframe width="100%" height="700px" src="https://www.youtube.com/embed/julpVVIgVVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+
+            </div>
+            <div class="col-md-6 ">
+                <ul class="spec">
+                    <li>AMD Ryzen 7 3700X</li>
+                    <li>Gigabyte B550 Vision D</li>
+                    <li> Corsair Dominator RGB Platinum, 32GB, 3.200 MHz</li>
+                    <li> Corsair MP600, 1TB</li>
+                    <li>RTX 2080 Super Gaming OC White</li>
+                    <li> Corsair 4000D</li>
+                    <li>Corsair RM750x</li>
+                </ul>
+                <a href="contact.html"><button type="button" class="button">Contact US</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Reviews</h2>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5em; margin-bottom: 5em;">
+            <div class="col-md-4">
+                <div class="review">
+                    <img src="images/home/review.png">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">John Smith</h4>
+                            <p>GamesRadar+</p>
+                            <p class="card-text"><q>This Company is one of the best companies that I ever worked with. They were fast, efficient, helpful, and have good deals. You can't really go wrong with them and you are always their number 1 priority.</q>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review">
+                    <img src="images/home/review2.png">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Jason Esmaeeli</h4>
+                            <p>IGN</p>
+                            <p class="card-text"><q>This Company is one of the best companies that I ever worked with. They were fast, efficient, helpful, and have good deals. You can't really go wrong with them and you are always their number 1 priority.</q>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="review">
+                    <img src="images/home/review3.png">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Farhan Shaikh</h4>
+                            <p>Game Informer</p>
+                            <p class="card-text"><q>This Company is one of the best companies that I ever worked with. They were fast, efficient, helpful, and have good deals. You can really go wrong with them and you are always their number 1 priority.</q>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 5em; background-color: #F2F2F2; padding-top: 2.5em; padding-bottom: 2.5em;">
+            <div class="col-md-1 "></div>
+            <div class="col-md-2 ">
+                <img src="images/home/awards/cnet-editors-choice.jpg" alt="Cnet Award">
+            </div>
+            <div class="col-md-2 ">
+                <img src="images/home/awards/destructoid-best.jpg" alt="Desructiod">
+            </div>
+            <div class="col-md-2 ">
+                <img src="images/home/awards/pcgamer-editors-choice.jpg" alt="PC Gamer Award">
+            </div>
+            <div class="col-md-2 ">
+                <img src="images/home/awards/toms-guide-gaming-desktops.jpg" alt="Toms Guide">
+            </div>
+            <div class="col-md-1 "></div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>THIS WEBSITE IS FOR SCHOOL PURPOSES ONLY</h4>
+                    <p>THank you for spending your time look over this webiste</p>
+
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="desktop.html">Desktop</a>
+                        </li>
+                        <li>
+                            <a href="laptop.html">Laptop</a>
+                        </li>
+                        <li>
+                            <a href="customize.html">Customize</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="zodiacContact.php">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Community</a>
+                        </li>
+                        <li>
+                            <a href="#">Q&A</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <!-- Add font awesome icons -->
+                    <a href="https://www.facebook.com/originpc/" target="blank" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/ORIGINPC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/user/ORIGINPC" target="blank" class="fa fa-youtube"></a>
+                    <a href="https://www.instagram.com/originpc/?hl=en" target="blank" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

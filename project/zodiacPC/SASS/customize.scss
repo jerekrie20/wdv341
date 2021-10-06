@@ -1,0 +1,236 @@
+    @import "colors";
+    @import "style";
+    header {
+        margin-bottom: 5em;
+        .jumbotron {
+            margin-bottom: 0;
+            padding: 0;
+            height: 37.5em;
+        }
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/customize/header.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $logo;
+            h1 {
+                font-size: 5em;
+                font-weight: bolder;
+            }
+        }
+    }
+    
+    .button {
+        border-radius: 20px;
+        padding: 5px 25px;
+        font-size: 18px;
+        box-shadow: 0 3px $text;
+    }
+    
+    .button:active {
+        background-color: $logo;
+        box-shadow: 0 5px $middleBlue;
+        transform: translateY(4px);
+    }
+    
+    .case {
+        margin-bottom: 10em;
+        .col-md-12 {
+            h1 {
+                @include heading1Logo;
+            }
+        }
+        .col-md-5 {
+            h2 {
+                text-align: center;
+                color: $logo;
+            }
+            ul {
+                list-style-type: none;
+                padding-left: 15em;
+                li {
+                    color: $text;
+                    margin-top: 2em;
+                    font-size: 16px;
+                }
+            }
+        }
+        .caseImage {
+            width: 50%;
+            margin: auto;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .col-md-7 {
+            .caseForm {
+                margin-top: 1em;
+                form {
+                    width: 77%;
+                    label {
+                        color: $text;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .order2 {
+        .col-md-5 {
+            h2 {
+                @include heading2Logo;
+            }
+            ul {
+                list-style-type: none;
+                padding-left: 15em;
+                li {
+                    color: $text;
+                    margin-top: 2em;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
+    .col-md-6 {
+        h2 {
+            @include heading2Logo;
+        }
+    }
+    
+    .pcOptions {
+        margin-bottom: 10em;
+        form {
+            width: 90%;
+            label {
+                color: $text;
+                font-size: 16px;
+            }
+        }
+        .form-group {
+            margin-bottom: 2em;
+        }
+        #watercooling {
+            display: none;
+        }
+        #displayFan {
+            display: none;
+        }
+    }
+    
+    .block {
+        background-color: $text;
+        padding: 5em;
+    }
+    
+    @media screen and (max-width: 400px) {
+        header {
+            .jumbotron {
+                height: 30em;
+            }
+            .hero-text {
+                h1 {
+                    font-size: 3.5em;
+                    font-weight: bolder;
+                }
+            }
+        }
+        .button {
+            margin-left: 40%;
+            box-shadow: none;
+        }
+        .button:active {
+            background-color: $logo;
+            box-shadow: none;
+            transform: translateY(0);
+        }
+        .case {
+            margin-bottom: 10em;
+            .col-md-12 {
+                h1 {
+                    text-align: center;
+                    color: $logo;
+                    font-size: 42px;
+                }
+            }
+            .caseImage {
+                width: 50%;
+                margin: auto;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .col-md-7 {
+                .caseForm {
+                    margin-top: 1em;
+                    form {
+                        width: 100%;
+                        label {
+                            color: $text;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .order2 {
+            margin-bottom: 2em;
+            .col-md-5 {
+                order: 2;
+                h2 {
+                    text-align: center;
+                    color: $logo;
+                }
+                ul {
+                    list-style-type: none;
+                    padding-left: 0;
+                    li {
+                        color: $text;
+                        margin-top: 2em;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .col-md-6 {
+            h2 {
+                text-align: center;
+                color: $logo;
+            }
+        }
+        .pcOptions {
+            order: 1;
+            margin-bottom: 5em;
+            form {
+                width: 100%;
+                label {
+                    color: $text;
+                    font-size: 18px;
+                }
+            }
+            .form-group {
+                margin-bottom: 2em;
+            }
+            #watercooling {
+                display: none;
+            }
+            #displayFan {
+                display: none;
+            }
+        }
+        .block {
+            background-color: $text;
+            padding: 3em;
+        }
+    }

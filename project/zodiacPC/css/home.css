@@ -1,0 +1,407 @@
+/*home buttons( might be a internal css)*/
+.hero {
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
+.left {
+  margin-left: 30%;
+}
+
+.CarbouselButton {
+  display: block;
+  border: none;
+  margin: auto;
+  margin-top: 2em;
+  padding: 1.5em;
+  outline: #0D0D0D;
+  text-align: center;
+  text-decoration: none;
+  background-color: #020659;
+}
+
+button:focus {
+  outline: none;
+}
+
+.button1 {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+
+.button1:hover {
+  background-color: #030A8C;
+}
+
+.button2 {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+
+.button2:hover {
+  background-color: #030A8C;
+}
+
+.button3 {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+}
+
+.button3:hover {
+  background-color: #030A8C;
+}
+
+.button4 {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+
+.button4:hover {
+  background-color: #030A8C;
+}
+
+.button5 {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.button5:hover {
+  background-color: #030A8C;
+}
+
+/*End button*/
+/*jumbotron*/
+.jumbotron {
+  height: 100%;
+  padding-top: 2em;
+  padding-bottom: 0;
+  background-color: #F2F2F2;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel.item {
+  margin-right: 0;
+}
+
+.carousel.item img {
+  width: 100%;
+  height: auto;
+}
+
+/* end jumbotron*/
+/* Image Button*/
+.aroundImg {
+  margin: auto;
+  position: relative;
+}
+.aroundImg img {
+  border-radius: 25%;
+  width: 100%;
+  height: auto;
+  margin-left: 4em;
+}
+.aroundImg .image {
+  opacity: 2;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  transform: translate(-50, -50);
+  text-align: center;
+}
+.middle .text {
+  padding: 0.5em 0.5em;
+}
+.middle .text a {
+  color: #F2F2F2;
+  text-decoration: none;
+  font-size: 2em;
+}
+.middle .text a:hover {
+  color: #04d9fe;
+}
+.middle .shop h1 {
+  padding-left: 1em;
+}
+
+.aroundImg:hover .image {
+  opacity: 0.3;
+}
+
+.aroundImg:hover .middle {
+  opacity: 1;
+}
+
+/*End*/
+.col-md-6 {
+  background-color: #F2F2F2;
+  margin-bottom: 5em;
+}
+
+iframe {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.spec {
+  background: #0D0D0D;
+  margin-top: 10%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.spec li {
+  color: #F2F2F2;
+  font-family: "Roboto", sans-serif;
+  margin-left: 30%;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+.button {
+  margin-left: 40%;
+  margin-top: 1em;
+}
+
+/*Card Review*/
+.col-md-12 h2 {
+  color: #04d9fe;
+  font-size: 38px;
+}
+
+.review {
+  margin-left: 25%;
+}
+.review .card {
+  margin-left: 1.5em;
+  width: 50%;
+}
+.review .card-title {
+  text-align: center;
+}
+.review p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Meida*/
+@media screen and (max-width: 400px) {
+  .container-fluid {
+    width: 100%;
+  }
+
+  .row {
+    margin-top: 1em;
+  }
+
+  /*Nav*/
+  nav {
+    margin-bottom: 1em;
+  }
+
+  .navbar-brand {
+    margin-left: 0;
+  }
+  .navbar-brand img {
+    width: 25%;
+  }
+
+  .navbar-toggler-icon {
+    display: inline;
+  }
+
+  .navbar-toggler {
+    background-color: black;
+  }
+
+  button.fa.fa-bars {
+    display: inline;
+    background-color: transparent;
+    border: none;
+  }
+
+  /*End Nav*/
+  /*Banners*/
+  .hero {
+    margin-bottom: 2em;
+  }
+  .hero .CarbouselButton {
+    display: none;
+  }
+  .hero .jumbotron {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .hero .col-md-2 {
+    display: none;
+  }
+
+  /*End Banners*/
+  .container {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2em;
+  }
+  .container h1 {
+    font-size: 1.5em;
+  }
+  .container .col-md-3 {
+    width: 50%;
+    padding: 0;
+  }
+  .container .aroundImg img {
+    margin-left: 0;
+  }
+  .container .middle {
+    top: 40%;
+    left: 35%;
+  }
+  .container .middle .text {
+    padding: 0.3em 0.3em;
+  }
+  .container .middle .text a {
+    font-size: 0.2em;
+  }
+
+  iframe {
+    margin-top: 2em;
+    width: 100%;
+    height: 20em;
+  }
+
+  .col-md-6 {
+    margin-bottom: 0;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+  .col-md-6 .spec {
+    margin-top: 0;
+    width: 100%;
+  }
+  .col-md-6 ul {
+    padding-left: 0;
+    background-color: #F2F2F2;
+  }
+  .col-md-6 ul li {
+    margin-left: 3.5em;
+    color: #0D0D0D;
+  }
+
+  /*Button*/
+  .button {
+    border-radius: 10px;
+    background-color: #04f9fe;
+    margin-left: 30%;
+    padding: 10px 15px;
+    font-size: 18px;
+    margin-bottom: 2em;
+    box-shadow: none;
+  }
+  .button .button:hover {
+    display: none;
+    background-color: #030A8C;
+    color: #F2F2F2;
+  }
+  .button .button:active {
+    display: none;
+    background-color: #04d9fe;
+    box-shadow: 0 5px #022859;
+    transform: translateY(4px);
+  }
+
+  /*Review*/
+  .review {
+    margin-left: 0;
+  }
+  .review img {
+    margin-left: 12%;
+  }
+  .review .card {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .review .card-title {
+    text-align: center;
+  }
+  .review p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+
+  /*Awards*/
+  .col-md-2 img {
+    margin-left: 32%;
+  }
+
+  /*Footer*/
+  footer {
+    padding-top: 0;
+    padding-bottom: 2.5em;
+    /* Style all font awesome icons */
+  }
+  footer .col-md-4 {
+    text-align: center;
+  }
+  footer .col-md-4 a {
+    margin-left: 1em;
+  }
+  footer .col-md-2 {
+    background-color: #0D0D0D;
+  }
+  footer .col-md-2 ul {
+    margin-left: 30%;
+  }
+  footer p,
+footer h4 {
+    color: #F2F2F2;
+  }
+  footer ul {
+    list-style-type: none;
+  }
+  footer ul li a {
+    text-decoration: none;
+    color: #F2F2F2;
+  }
+  footer ul a:hover {
+    color: #04d9fe;
+    text-decoration: none;
+  }
+  footer .fa {
+    padding: 8px;
+    font-size: 25px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+}

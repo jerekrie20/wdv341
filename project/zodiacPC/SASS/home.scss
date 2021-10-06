@@ -1,0 +1,420 @@
+@import "colors";
+
+/*home buttons( might be a internal css)*/
+
+.hero {
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.left {
+    margin-left: 30%;
+}
+
+.CarbouselButton {
+    display: block;
+    border: none;
+    margin: auto;
+    margin-top: 2em;
+    padding: 1.5em;
+    outline: #0D0D0D;
+    text-align: center;
+    text-decoration: none;
+    background-color: #020659;
+}
+
+button:focus {
+    outline: none;
+}
+
+.button1 {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+
+.button1:hover {
+    background-color: #030A8C;
+}
+
+.button2 {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+}
+
+.button2:hover {
+    background-color: #030A8C;
+}
+
+.button3 {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+
+.button3:hover {
+    background-color: #030A8C;
+}
+
+.button4 {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    ;
+}
+
+.button4:hover {
+    background-color: #030A8C;
+}
+
+.button5 {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.button5:hover {
+    background-color: #030A8C;
+}
+
+
+/*End button*/
+
+
+/*jumbotron*/
+
+.jumbotron {
+    height: 100%;
+    padding-top: 2em;
+    padding-bottom: 0;
+    background-color: #F2F2F2;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel.item {
+    margin-right: 0;
+}
+
+.carousel.item img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* end jumbotron*/
+
+
+/* Image Button*/
+
+.aroundImg {
+    margin: auto;
+    position: relative;
+    img {
+        border-radius: 25%;
+        width: 100%;
+        height: auto;
+        margin-left: 4em;
+    }
+    .image {
+        opacity: 2;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    transform: translate(-50, -50);
+    text-align: center;
+    .text {
+        padding: .5em .5em;
+    }
+    .text a {
+        color: #F2F2F2;
+        text-decoration: none;
+        font-size: 2em;
+    }
+    .text a:hover {
+        color: #04d9fe;
+    }
+    .shop {
+        h1 {
+            padding-left: 1em;
+        }
+    }
+}
+
+.aroundImg:hover .image {
+    opacity: 0.3;
+}
+
+.aroundImg:hover .middle {
+    opacity: 1;
+}
+
+
+/*End*/
+
+.col-md-6 {
+    background-color: #F2F2F2;
+    margin-bottom: 5em;
+}
+
+iframe {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.spec {
+    background: #0D0D0D;
+    margin-top: 10%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.spec li {
+    color: #F2F2F2;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30%;
+    font-size: 1.5em;
+    margin-top: .5em;
+}
+
+.button {
+    margin-left: 40%;
+    margin-top: 1em;
+}
+
+
+/*Card Review*/
+
+.col-md-12 {
+    h2 {
+        color: $logo;
+        font-size: 38px;
+    }
+}
+
+.review {
+    margin-left: 25%;
+    .card {
+        margin-left: 1.5em;
+        width: 50%;
+    }
+    .card-title {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+
+/* Meida*/
+
+@media screen and (max-width: 400px) {
+    .container-fluid {
+        width: 100%;
+    }
+    .row {
+        margin-top: 1em;
+    }
+    /*Nav*/
+    nav {
+        margin-bottom: 1em;
+    }
+    .navbar-brand {
+        margin-left: 0;
+        img {
+            width: 25%;
+        }
+    }
+    .navbar-toggler-icon {
+        display: inline;
+    }
+    .navbar-toggler {
+        background-color: black;
+    }
+    button.fa.fa-bars {
+        display: inline;
+        background-color: transparent;
+        border: none;
+    }
+    /*End Nav*/
+    /*Banners*/
+    .hero {
+        margin-bottom: 2em;
+        .CarbouselButton {
+            display: none;
+        }
+        .jumbotron {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .col-md-2 {
+            display: none;
+        }
+    }
+    /*End Banners*/
+    .container {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 2em;
+        h1 {
+            font-size: 1.5em;
+        }
+        .col-md-3 {
+            width: 50%;
+            padding: 0;
+        }
+        .aroundImg {
+            img {
+                margin-left: 0;
+            }
+        }
+        .middle {
+            top: 40%;
+            left: 35%;
+            .text {
+                padding: .3em .3em;
+            }
+            .text a {
+                font-size: .2em;
+            }
+        }
+    }
+    iframe {
+        margin-top: 2em;
+        width: 100%;
+        height: 20em;
+    }
+    .col-md-6 {
+        margin-bottom: 0;
+        padding-right: .5em;
+        padding-left: .5em;
+        .spec {
+            margin-top: 0;
+            width: 100%;
+        }
+        ul {
+            padding-left: 0;
+            background-color: $text;
+            li {
+                margin-left: 3.5em;
+                color: $background;
+            }
+        }
+    }
+    /*Button*/
+    .button {
+        border-radius: 10px;
+        background-color: rgb(4, 249, 254);
+        margin-left: 30%;
+        padding: 10px 15px;
+        font-size: 18px;
+        margin-bottom: 2em;
+        box-shadow: none;
+        .button:hover {
+            display: none;
+            background-color: $lightBlue;
+            color: $text;
+        }
+        .button:active {
+            display: none;
+            background-color: $logo;
+            box-shadow: 0 5px $middleBlue;
+            transform: translateY(4px);
+        }
+    }
+    /*Review*/
+    .review {
+        margin-left: 0;
+        img {
+            margin-left: 12%;
+        }
+        .card {
+            margin-left: 0;
+            width: 100%;
+            margin-bottom: 2em;
+        }
+        .card-title {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+    /*Awards*/
+    .col-md-2 {
+        img {
+            margin-left: 32%;
+        }
+    }
+    /*Footer*/
+    footer {
+        padding-top: 0;
+        padding-bottom: 2.5em;
+        .col-md-4 {
+            text-align: center;
+            a {
+                margin-left: 1em;
+            }
+        }
+        .col-md-2 {
+            background-color: $background;
+            ul {
+                margin-left: 30%;
+            }
+        }
+        p,
+        h4 {
+            color: $text;
+        }
+        ul {
+            list-style-type: none;
+            li a {
+                text-decoration: none;
+                color: $text;
+            }
+            a:hover {
+                color: $logo;
+                text-decoration: none;
+            }
+        }
+        /* Style all font awesome icons */
+        .fa {
+            padding: 8px;
+            font-size: 25px;
+            width: 1.5em;
+            height: 1.5em;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            margin-right: 1em;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+}
